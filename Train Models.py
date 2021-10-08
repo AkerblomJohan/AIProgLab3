@@ -133,7 +133,7 @@ model = non_convolutional_model()
 model.fit(x_train, y_train,
       epochs=50, 
       validation_split=0.2, 
-      batch_size=256,
+      batch_size=128,
       verbose=1,
       callbacks=[tb_callback]
      )
