@@ -24,6 +24,7 @@ Andra bilden är Non-Conventional med LR = 0.01, 0.3, 0.6 samt 0.9
 //Bild, får ej in atm
 
 
-b) 
+b) Där är en stor skillnad om man kollar till Accuracy av testerna och "Batch-Size". Ju större size desto mer uppdateringar blir det och på så sätt mer "accurate" men det kan också leda till dålig generalisering. 
+Om man istället har mindre batch-size blir det mindre uppdateringar och det kan leda till att modellen inte går samman.
 
 c) Non-Conv är väldigt snabb jämfört med Conv modellen
