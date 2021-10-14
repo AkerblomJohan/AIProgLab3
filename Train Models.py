@@ -110,13 +110,13 @@ def non_convolutional_model():
 def convolutional_model():
     model = K.Sequential()
     model.add(K.layers.Input((28,28,1)))
-    model.add(K.layers.Conv2D(16, kernel_size=(8, 8), strides=(1,1), activation="relu"))
+    model.add(K.layers.Conv2D(16, kernel_size=(21, 21), strides=(7,7), activation="relu"))
     model.add(K.layers.MaxPooling2D())
     model.add(K.layers.Flatten())
     model.add(K.layers.Dense(10, activation="softmax"))
     
     model.compile(loss="categorical_crossentropy",
-                  optimizer=K.optimizers.SGD(lr=0.9),
+                  optimizer=K.optimizers.SGD(lr=0.01),
                   metrics=["accuracy"])
     return model
 
@@ -133,7 +133,7 @@ model = convolutional_model()
 model.fit(x_train, y_train,
       epochs=50, 
       validation_split=0.2, 
-      batch_size=128,
+      batch_size=256,
       verbose=1,
       callbacks=[tb_callback]
      )
