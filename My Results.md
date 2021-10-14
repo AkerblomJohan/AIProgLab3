@@ -43,3 +43,11 @@ d)
 
 Både non-conv och conv ger dåliga resultat på "Moved Data" testseten. conv ger ett resultat på snitt 18, non conv ligger nere på 12. På de roterade testsetten ger conv en accuracy på 86, vilket är 10 under de vanliga. non-conv hamnar på 75, vilket är ungefär 14 under de vanliga. 
 Det är samma skillnad mellan de olika testseten för båda nätverken. 
+
+e) 
+
+Non-Conv modellen:
+Med lr = 0.01
+Bath-Size = 256
+Accuracy ökade succesivt när det lades till neuroner i det "gömda lagret" tills det uppnådde ungefär 320 antal neuroerna efter detta så låg accuracyn på samma nivå som var ungefär 
+0.9420 väldigt länge ungefär till över 1000 neuroner efter det kunde man se skillnad igen. Accuracyn stagnerade och höll samma kurs när den var 4000+.
