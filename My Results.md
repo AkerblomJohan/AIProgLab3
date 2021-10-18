@@ -18,10 +18,19 @@ Det finns ingen större tidsskillnad på LR. Ju större LR det är desto snabbar
 Medan ett för stort värde kan leda till att man lär sig en suboptimal för snabbt eller att det blir en instabil träningsprocess.
 Första bilden är för Conventional med LR = 0.01, 0.3, 0.6 samt 0.9  
 
+Blå = 0.01 
+Grå = 0.3
+Röd = 0.6
+Grön = 0.9
 
 //Bild, får ej in atm
 
-Andra bilden är Non-Conventional med LR = 0.01, 0.3, 0.6 samt 0.9 
+Andra bilden är Non-Conventional med LR = 0.01, 0.3, 0.6 samt 0.9
+
+Mörkblå = 0.01
+Rosa = 0.3
+Orange = 0.6
+Turkos = 0.9
 
 //Bild, får ej in atm
 
@@ -51,3 +60,7 @@ Med lr = 0.01
 Bath-Size = 256
 Accuracy ökade succesivt när det lades till neuroner i det "gömda lagret" tills det uppnådde ungefär 320 antal neuroerna efter detta så låg accuracyn på samma nivå som var ungefär 
 0.9420 väldigt länge ungefär till över 1000 neuroner efter det kunde man se skillnad igen. Accuracyn stagnerade och höll samma kurs när den var 4000+.
+
+f)
+
+g) Ju fler lager som lades till desto längre tog tiden för att genomföra testet men samtidigt ökade accuracyn. 
