@@ -24,7 +24,7 @@ Röd = 0.6
 Grön = 0.9
 
 //Bild, får ej in atm
-![Conv Model](fig/ConvModel.png)
+![Conv Model](fig/ConvModel.PNG)
 
 Andra bilden är Non-Conventional med LR = 0.01, 0.3, 0.6 samt 0.9
 
