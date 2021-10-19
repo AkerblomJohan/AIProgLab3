@@ -39,10 +39,12 @@ Turkos = 0.9
 
 b) 
 
-Där är en stor skillnad om man kollar till Accuracy av testerna och "Batch-Size". Ju större size desto mer uppdateringar blir det och på så sätt mer "accurate" men det kan också leda till dålig generalisering. 
-Om man istället har mindre batch-size blir det mindre uppdateringar och det kan leda till att modellen inte går samman. 
+Det fins en skillnad om man kollar på accuracy och tid på tester med olika batch-size, sänker man batchSize till 128(som man ser på testet) ökar både tiden det tar och hur accurate den är. 
 
-![Batch size 256 vs 128](fig/Batch128-256_data_compare.PNG)
+Grön/grå är batch 256
+Blå/röd är batch 128
+
+![Batch size compare](fig/batch_comp.PNG)
 
 c) 
 
@@ -73,15 +75,16 @@ f)
 
 från att analysera flera olika "kernesize" med olika "strides" fann vi att de som gav minst påverkan på resultatet men fortfarande och mycket bättre tid va kernal (14,14) strides (4,4).
 
-Kernal	Stride	tid	    acc moved	acc rot	    acc
-14,14	4,4	    0.56	21.21	    82.46	    95.15
+|Kernal	|Stride	|tid	|acc moved	|acc rot	|acc    |
+|-------|-------|-------|-----------|-----------|-------|
+|14,14	|4,4	|0.56	|21.21	    |82.46	    |95.15  |
 
 g) Ju fler lager som lades till desto längre tog tiden för att genomföra testet men samtidigt ökade accuracyn. 
 
 8
 
 |Test    |Kernal    |Stride  |lr	  |tid	   |acc moved	|acc rot	 |test acc    |train acc   |relu lager  |batch Size |
----------|--------  |--------|--------|--------|------------|------------|------------|------------|------------|---------- |
+|--------|--------  |--------|--------|--------|------------|------------|------------|------------|------------|---------- |
 |1       |14,14     |4,4     |0.3     |2:30    |26,7        |89,87       |98,46       |99.66       |64+32       |256        |
 |2       |14,14     |4,4     |0,3     |2:58    |25,76       |90,67       |98,57       |99,68       |64+32       |128        |
 |3       |10,10     |2,2     |0,3     |11:07   |24,06       |91,91       |98,94       |99,75       |64+32       |128        |
