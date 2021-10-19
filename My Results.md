@@ -8,7 +8,7 @@ I den här filen ska ni beskriva:
 
 Glöm inte att ha med figurer:
 
-![TensorBoard download](fig/TensorBoardDownload.png "Glöm inte att kryssa i 'Show data download links' så att ni kan ladda ner era filer.")
+![TensorBoard download](fig/TensorBoardDownload.png) "Glöm inte att kryssa i 'Show data download links' så att ni kan ladda ner era filer.")
 
 
 7
@@ -24,6 +24,7 @@ Röd = 0.6
 Grön = 0.9
 
 //Bild, får ej in atm
+![Conv Model](fig/ConvModel.png)
 
 Andra bilden är Non-Conventional med LR = 0.01, 0.3, 0.6 samt 0.9
 
@@ -62,5 +63,10 @@ Accuracy ökade succesivt när det lades till neuroner i det "gömda lagret" til
 0.9420 väldigt länge ungefär till över 1000 neuroner efter det kunde man se skillnad igen. Accuracyn stagnerade och höll samma kurs när den var 4000+.
 
 f)
+
+från att analysera flera olika "kernesize" med olika "strides" fann vi att de som gav minst påverkan på resultatet men fortfarande och mycket bättre tid va kernal (14,14) strides (4,4).
+
+Kernal	Stride	tid	    acc moved	acc rot	    acc
+14,14	4,4	    0.56	21.21	    82.46	    95.15
 
 g) Ju fler lager som lades till desto längre tog tiden för att genomföra testet men samtidigt ökade accuracyn. 
