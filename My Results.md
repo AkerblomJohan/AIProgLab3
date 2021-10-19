@@ -94,6 +94,7 @@ g) Ju fler lager som lades till desto längre tog tiden för att genomföra test
 |5       |14,14     |3,3     |0,3     |2:17    |21,66       |85,18       |97,33       |98,61       |64+32+16      |128        |
 
 Test 1 ger bästa resultat. 
+Vi använde Conv-modellen när vi gjorde testerna då det har uppnåt bäst resultat när vi har jämfört innan.
 Från de tidigare testarna fann vi att lr ger bäst resultat och använde oss då och den i alla tester. 
 Kernal och stirdes gav snabbast och mest accurate resultat på 14,14-4,4 vilket är anledningen till varför de användes på 3/5 tester. Vi testade också några andra värden på kernal och stride, då det finns många olika värden att testa på där och vi försökte öka accuracy och offra lite tid och viseversa. 
 
