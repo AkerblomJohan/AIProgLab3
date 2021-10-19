@@ -42,7 +42,7 @@ b)
 Där är en stor skillnad om man kollar till Accuracy av testerna och "Batch-Size". Ju större size desto mer uppdateringar blir det och på så sätt mer "accurate" men det kan också leda till dålig generalisering. 
 Om man istället har mindre batch-size blir det mindre uppdateringar och det kan leda till att modellen inte går samman. 
 
-![Batch size 128 vs 256](fig/Batch128-256_data_compare.PNG)
+![Batch size 256 vs 128](fig/Batch128-256_data_compare.PNG)
 
 c) 
 
@@ -77,3 +77,14 @@ Kernal	Stride	tid	    acc moved	acc rot	    acc
 14,14	4,4	    0.56	21.21	    82.46	    95.15
 
 g) Ju fler lager som lades till desto längre tog tiden för att genomföra testet men samtidigt ökade accuracyn. 
+
+8
+
+Test    Kernal	Stride  lr	    tid	(avg)acc moved	acc rot	    test acc    train acc   relu lager  batch Size
+1       14,14   4,4     0.3     2:30    26,7        89,87       98,46       99.66       64+32       256
+2       14,14   4,4     0,3     2:58    25,76       90,67       98,57       99,68       64+32       128
+3       10,10   2,2     0,3     11:07   24,06       91,91       98,94       99,75       64+32       128
+4       14,14   4,4     0,3     2:48    26,41       87,37       97,57       99,06       128+64+32   128        
+5       14,14   3,3     0,3     2:17    21,66       85,18       97,33       98,61       64+32       128
+
+Test 2 ger bästa resultat. 
