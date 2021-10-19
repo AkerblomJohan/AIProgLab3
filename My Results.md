@@ -58,7 +58,7 @@ Både non-conv och conv ger dåliga resultat på "Moved Data" testseten. conv ge
 Det är samma skillnad mellan de olika testseten för båda nätverken. 
 
 ![test data](fig/test.PNG)
-![Rotated data](fig/rotatedDate.PNG)
+![Rotated data](fig/rotatedData.PNG)
 ![Moved data](fig/MovedData.PNG)
 
 e) 
