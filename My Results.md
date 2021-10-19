@@ -23,7 +23,7 @@ Grå = 0.3
 Röd = 0.6
 Grön = 0.9
 
-//Bild, får ej in atm
+
 ![Conv Model](fig/ConvModel.PNG)
 
 Andra bilden är Non-Conventional med LR = 0.01, 0.3, 0.6 samt 0.9
@@ -33,13 +33,16 @@ Rosa = 0.3
 Orange = 0.6
 Turkos = 0.9
 
-//Bild, får ej in atm
+![Non Conv Model](fig/NonConvModel.png)
+
 
 
 b) 
 
 Där är en stor skillnad om man kollar till Accuracy av testerna och "Batch-Size". Ju större size desto mer uppdateringar blir det och på så sätt mer "accurate" men det kan också leda till dålig generalisering. 
 Om man istället har mindre batch-size blir det mindre uppdateringar och det kan leda till att modellen inte går samman. 
+
+![Batch size 128 vs 256](fig/Batch128-256_data_compare.PNG)
 
 c) 
 
@@ -53,6 +56,10 @@ d)
 
 Både non-conv och conv ger dåliga resultat på "Moved Data" testseten. conv ger ett resultat på snitt 18, non conv ligger nere på 12. På de roterade testsetten ger conv en accuracy på 86, vilket är 10 under de vanliga. non-conv hamnar på 75, vilket är ungefär 14 under de vanliga. 
 Det är samma skillnad mellan de olika testseten för båda nätverken. 
+
+![test data](fig/test.PNG)
+![Rotated data](fig/rotatedDate.PNG)
+![Moved data](fig/MovedData.PNG)
 
 e) 
 
